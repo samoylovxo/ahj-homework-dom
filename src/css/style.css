@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.cursor {
+  height: 40px;
+  width: 40px;
+  background-image: url("../images/thor.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: none;
+}
+
+.gameover {
+  padding: 15px 25px;
+  background-color: crimson;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  display: none;
+}
+
+.board__content {
+  width: 600px;
+  height: 600px;
+  background: rgb(12, 20, 25);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.board__ceil {
+  width: 300px;
+  height: 300px;
+  border: 1px solid teal;
+  cursor: pointer;
+  position: relative;
+  cursor: none;
+}
+
+.board__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
