@@ -19,8 +19,7 @@ export const createCeils = (count) => {
 export const createImg = () => {
   const img = document.createElement('img');
   img.className = 'board__img';
-  img.src =
-    'https://raw.githubusercontent.com/netology-code/ahj-homeworks/simplification/dom/pic/goblin.png';
+  img.src = 'https://raw.githubusercontent.com/netology-code/ahj-homeworks/simplification/dom/pic/goblin.png';
   img.alt = 'monster';
 
   return img;
